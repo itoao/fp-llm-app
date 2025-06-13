@@ -1,0 +1,17 @@
+{
+  "plugins": ["react", "typescript", "unicorn", "oxlint", "nextjs"],
+  "rules": {
+    "no-unused-vars": "error",
+    "react/jsx-no-undef": "warn",
+    "no-debugger": "off",
+    "eqeqeq": "warn",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+  "ignorePatterns": [
+    "dist/",
+    "node_modules/",
+    ".next/",
+    "out/",
+    "build/"
+  ]
+}
