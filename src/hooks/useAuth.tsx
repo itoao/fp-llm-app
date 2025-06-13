@@ -47,6 +47,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }, 500);
   }, []);
 
+  // TODO: 今はモックだが後で本実装する
+  // oxlint-disable-next-line no-unused-vars
   const signIn = async (email: string, password: string) => {
     setLoading(true);
     await new Promise(resolve => setTimeout(resolve, 1000));

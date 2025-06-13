@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint && npm run lint:oxlint",
     "lint:oxlint": "oxlint --nextjs-plugin",
-    "lint:fix": "oxlint --nextjs-plugin --fix",
+    "lint:fix": "oxlint --nextjs-plugin --fix-dangerously",
     "typecheck": "tsgo --noEmit",
     "typecheck:watch": "tsgo --noEmit --watch"
   },
@@ -25,7 +25,6 @@
     "zod": "^3.25.60"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -33,8 +32,6 @@
     "@typescript/native-preview": "^7.0.0-dev.20250612.1",
     "@vitejs/plugin-react": "^4.5.2",
     "@vitest/ui": "^3.2.3",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.3",
     "happy-dom": "^18.0.1",
     "oxlint": "^1.1.0",
     "tailwindcss": "^4",

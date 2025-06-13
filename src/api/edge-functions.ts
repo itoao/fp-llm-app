@@ -73,6 +73,9 @@ app.post('/simulate', async (c) => {
   try {
     // Validate JWT (mock)
     const authHeader = c.req.header('Authorization');
+
+    // TODO: 今はモックだが後で本実装する
+    // oxlint-disable-next-line no-unused-vars
     const user = await validateJWT(authHeader);
 
     // Parse and validate request body
